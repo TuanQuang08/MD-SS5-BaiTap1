@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+Bai 1: Tính điểm TB
+<button type="button" onclick="TinhDiemTB();">Tinh Diem TB!!</button>
+<br><br><br>
+Bai 1: Đổi nhiệt độ
+<button type="button" onclick="DoiNhietDo();">Doi Nhiet Do!!</button>
+<br><br><br>
+Bai 3 + 4: Diện tích & Chu vi hình tròn
+<button type="button" onclick="TinhDuongTron();">Diện tích & Chu vi hình tròn!!</button>
+</body>
+<script>
+  function TinhDiemTB() {
+    let inputDiem1 = prompt('Điểm Vật Lý: ');
+    let inputDiem2 = prompt('Điểm Hóa: ');
+    let inputDiem3 = prompt('Điểm Sinh: ');
+    let Diem1 = parseInt(inputDiem1);
+    let Diem2 = parseInt(inputDiem2);
+    let Diem3 = parseInt(inputDiem3);
+    let tongDiem = Diem1 + Diem2 +Diem3;
+    let DiemTB = (tongDiem)/3;
+    document.write('Điểm Vật Lý: '+ Diem1 + '<br/>');
+    document.write('Điểm Hóa: '+ Diem2 + '<br/>');
+    document.write('Điểm Sinh: '+ Diem3 + '<br/>');
+    document.write('Tổng Điểm: '+ tongDiem + '<br/>');
+    document.write('Điểm Trung Bình: '+ DiemTB);
+  }
+  function DoiNhietDo() {
+    let inputDoC = prompt('Nhập nhiệt độ C: ');
+    let DoC = parseInt(inputDoC);
+    let DoF = (DoC/5*9)+32;
+    document.write('Độ C: '+ DoC + '<br/>');
+    document.write('Độ F: '+ DoF);
+  }
+  function TinhDuongTron() {
+    let inputBanKinh = prompt('Nhập Bán Kính: ');
+    let banKinh = parseInt(inputBanKinh);
+    let chuVi = banKinh*2*3.14;
+    console.log(banKinh*banKinh);
+    let dienTich = banKinh*banKinh*3.14
+    document.write('Bán Kính: '+ banKinh + '<br/>');
+    document.write('Chu Vi: '+ chuVi + '<br/>');
+    document.write('Diện Tích: '+ dienTich);
+  }
+</script>
+</html>
